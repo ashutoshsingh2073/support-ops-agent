@@ -1,0 +1,81 @@
+[
+  {
+    "id": "refund-window",
+    "question": "How many days do I have to return an unused item?",
+    "expectedRoute": "answer_from_docs",
+    "mustContain": ["7 days"]
+  },
+  {
+    "id": "refund-credit-time",
+    "question": "How long does a refund take to reach my bank?",
+    "expectedRoute": "answer_from_docs",
+    "mustContain": ["working days"]
+  },
+  {
+    "id": "shipping-standard",
+    "question": "What is the standard delivery time within India?",
+    "expectedRoute": "answer_from_docs",
+    "mustContain": ["working days"]
+  },
+  {
+    "id": "shipping-free",
+    "question": "When is shipping free?",
+    "expectedRoute": "answer_from_docs",
+    "mustContain": ["499"]
+  },
+  {
+    "id": "shipping-international",
+    "question": "Do you ship to Dubai?",
+    "expectedRoute": "answer_from_docs",
+    "mustContain": ["international"]
+  },
+  {
+    "id": "account-reset",
+    "question": "How do I reset my password?",
+    "expectedRoute": "answer_from_docs",
+    "mustContain": ["Forgot password"]
+  },
+  {
+    "id": "account-lockout",
+    "question": "My account is locked after failed login attempts, how long?",
+    "expectedRoute": "answer_from_docs",
+    "mustContain": ["15 minutes"]
+  },
+  {
+    "id": "account-2fa",
+    "question": "How do I enable two factor authentication?",
+    "expectedRoute": "answer_from_docs",
+    "mustContain": ["Settings"]
+  },
+  {
+    "id": "unknown-topic",
+    "question": "What is your enterprise SLA for uptime credits?",
+    "expectedRoute": "answer_from_docs",
+    "mustRefuse": true
+  },
+  {
+    "id": "refund-action-large",
+    "question": "Please refund ₹2000 for order A-1001",
+    "expectedRoute": "take_action"
+  },
+  {
+    "id": "refund-action-no-order",
+    "question": "I want a refund, give me my money back",
+    "expectedRoute": "take_action"
+  },
+  {
+    "id": "ticket-action",
+    "question": "Please create a ticket, my order A-1002 arrived broken",
+    "expectedRoute": "take_action"
+  },
+  {
+    "id": "out-of-scope-weather",
+    "question": "What is the weather in Lucknow today?",
+    "expectedRoute": "out_of_scope"
+  },
+  {
+    "id": "out-of-scope-joke",
+    "question": "Tell me a joke about cricket",
+    "expectedRoute": "out_of_scope"
+  }
+]
